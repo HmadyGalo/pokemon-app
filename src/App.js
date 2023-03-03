@@ -1,9 +1,11 @@
 import React, { useEffect,useState } from "react";
+import  "./App.css"
 import {getPokemon, getPokemosFromApi, searchPokemon} from "./api/pokeapi-service"
 import Searchbar from "./component/search/Searchbar";
 import PokemonList from "./component/pokemos-list/PokemonsList";
 import FiltroProvider from "./component/Provider/FiltroProvider.jsx";
 import SelectType from "./component/select/SelectType"
+import Navbar from "./component/navbar/Navbar";
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
@@ -50,7 +52,9 @@ function App() {
     }
   return (
     <FiltroProvider>
+          <Navbar title={"POKEMON APP"}/>
     <header className="App-header">
+    
         
         <Searchbar onSearch={onSearchHandler}/>
           <SelectType/>

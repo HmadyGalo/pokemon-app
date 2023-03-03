@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
+  background-color: #11201131;
+flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  max-width: 100vw;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navegar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background-color: #fcfcfc;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.navegar .navegacion {
+  list-style-type: none;
+  display: flex;
+  gap: 1.9rem;
+}
+.navegar .nav-link {
+  text-decoration: none;
+  color: #0d2e1a;
+  transition: 0.3s;
+}
+.navegar .nav-link:hover {
+  color: #ff7235;
+  border-bottom: 2px solid #ff7235;
+}
+.navegar__title {
+  color: #0d2e1a;
+}
+.navegar li {
+  font-weight: 700;
 }
