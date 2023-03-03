@@ -4,6 +4,7 @@ import React,{useEffect,useState} from 'react';
 import useFiltro from '../Provider/useFiltro';
 
 
+
 export default function SelectType() {
   const [tipos, setTipos] = useState([]);
 
@@ -31,7 +32,7 @@ export default function SelectType() {
 
   return (
     <div>
-      <select onChange={handleTipo}>
+      <select className='select' onChange={handleTipo}>
         <option value="all">All</option>
         {tipos && tipos.map((tipo, index)=>
         {return (

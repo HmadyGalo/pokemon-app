@@ -6,8 +6,8 @@ const PokemonList = (props) => {
   const { pokemons} = props;
 
   return (
-    <section>
-      <p>Prueba!</p>
+    <section className="poke-row">
+      
      <div className="row"> 
         {pokemons && pokemons.map((pokemon, index) => {
             return (

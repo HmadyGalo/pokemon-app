@@ -1,18 +1,4 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-body{
-  display: flex;
-  background-color: #11201131;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- /* min-height: 100vh;*/
 
-}
 .card{
   display: block;
   flex-direction: column;
@@ -39,7 +25,7 @@ body{
 
 
 }
-section{
+ .poke-row{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -93,11 +79,13 @@ section{
 
 .card .front{
   background-color: rgb(30, 47, 47);
+  border: 2px solid  rgb(255,255,0) ;
   transform: perspective(500px) rotateY(0deg);
 }
 .card .back{
 
   background-color: rgb(250, 254, 254);
+  border: 2px solid rgb(255,255,0);
   transform: perspective(500px) rotateY(180deg);
 }
 .card:hover .front{
@@ -115,10 +103,9 @@ section{
  /*/buscador*/
  .searchbar-container {
   display: flex;
-  margin-bottom: 2%;
-  padding: 0 20px;
+  padding: 0 1rem;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .searchbar {
@@ -134,12 +121,13 @@ section{
 }
 
 .searchbar-btn button {
-  background-color: #0e6f9f;
+  background-color: #051a24;
   border: none;
   border-radius: 10px;
   height: 40px;
   color: white;
-  padding: 8px 10px;
+  padding: 10px 10px;
 }
+
 
 

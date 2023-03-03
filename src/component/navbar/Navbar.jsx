@@ -23,9 +23,7 @@ componentDidMount(){
  
         <nav className="navegar" id="navegando"> 
          <h1 className="navegar__title">{this.state.title}</h1>
-        <ul className="navegacion">
-          <li className="nav-list"><a href="#" class="nav-link">HOME</a></li>
-        </ul>
+      
         </nav>
       
       

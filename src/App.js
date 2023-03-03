@@ -52,12 +52,15 @@ function App() {
     }
   return (
     <FiltroProvider>
-          <Navbar title={"POKEMON APP"}/>
+         <Navbar title={"POKEMON APP"}/>
+     <section className="principal">
+          <Searchbar onSearch={onSearchHandler}/>
+          <SelectType/>
+     </section>
+          
     <header className="App-header">
     
-        
-        <Searchbar onSearch={onSearchHandler}/>
-          <SelectType/>
+    
         {notFound ? (
           <div class-name="not-found-text"> No esta el Pokemon que buscas </div>
         ) :(<PokemonList   pokemons={pokemons} />)} 
