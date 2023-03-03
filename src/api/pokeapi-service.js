@@ -1,13 +1,27 @@
 /*
   API Service
 */
+
+export const searchPokemon = async (pokemon) => {
+  
+      let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
+      const response = await fetch(url)
+      return await response.json() 
+  
+}
 const apiUrl = 'https://pokeapi.co/api/v2/pokemon';
 
-const getPokemosFromApi = async () => {
+export  const getPokemosFromApi = async () => {
   const data = await fetch(apiUrl);
-  const response = await data.json();
+ return await data.json();
 
-  return response.results;
-};
+  
+}
+export const getPokemon = async (url) =>{
+  const response = await fetch(url)
+        return await response.json()
+   
+  
+}
 
-export default getPokemosFromApi;
+

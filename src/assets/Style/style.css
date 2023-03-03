@@ -1,0 +1,145 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  display: flex;
+  background-color: #11201131;
+flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+.card{
+  display: block;
+  flex-direction: column;
+
+
+  width: 300px;
+  height: 300px;
+  margin-bottom: 25px;
+ 
+  
+
+}
+.card div{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: 1s;
+
+
+
+}
+section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.pokemon-id{
+  display: flex;
+  justify-content: center;
+  color: #e9eff0;
+  text-align: center;
+  background-color: #236b78;
+  margin-bottom: 15px;
+  margin-top: 2%;
+  margin-left: 4px;
+  border-radius: 50%;
+  width: 20%;
+  padding: 3px;
+  font-size: 16px;
+
+  
+
+}
+.pokemon-title {
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  color: aquamarine;
+  text-decoration-line:underline;
+
+ }
+.tipo-id{
+  font-style: oblique;
+  text-transform: capitalize;
+  color: #e9eff0;
+  font-weight: bold;
+  font-family: Cambria;
+  
+}
+.info{
+  font-style: oblique;
+  font-weight: bold;
+  font-family: Cambria;
+}
+
+.row {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-gap: 20px;
+  
+  
+}
+
+.card .front{
+  background-color: rgb(30, 47, 47);
+  transform: perspective(500px) rotateY(0deg);
+}
+.card .back{
+
+  background-color: rgb(250, 254, 254);
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .front{
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .back{
+  transform: perspective(500px) rotateY(360deg);
+}
+
+ 
+ .card-img-top{
+  width: 50%;
+ }
+
+ /*/buscador*/
+ .searchbar-container {
+  display: flex;
+  margin-bottom: 2%;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: left;
+}
+
+.searchbar {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.searchbar input {
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+}
+
+.searchbar-btn button {
+  background-color: #0e6f9f;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  color: white;
+  padding: 8px 10px;
+}
+
+

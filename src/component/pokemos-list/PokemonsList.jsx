@@ -1,17 +1,22 @@
-import React, { useEffect } from "react";
-import getPokemosFromApi from "../../api/pokeapi-service";
 
-const PokemonList = () => {
-  const pokemonsList = getPokemosFromApi();
-  console.log(pokemonsList);
+import Pokemon from "../pokemon/Pokemon";
 
-  // useEffect(() => {
-  //   pokemonsList = getPokemosFromApi();
-  // }, []);
+
+const PokemonList = (props) => {
+  const { pokemons} = props;
 
   return (
     <section>
       <p>Prueba!</p>
+     <div className="row"> 
+        {pokemons && pokemons.map((pokemon, index) => {
+            return (
+          <Pokemon poke={pokemon} key={index} /> 
+          );
+        })}
+        </div>
+
+     
     </section>
   );
 };
